@@ -5,12 +5,19 @@
     Faça um programa que peça para o usuário informar um número. Identifique se o número fornecido pelo usuário é um número primo e apresente na tela.
     */
 
-    //ENTRADA
+    const num = Number(prompt("Informe um número para verificar se ele é primo"));
 
+    let primo = true;
+    for(let i = 2; i <= (num - 1); i++){
+        if(Number.isInteger(numeros/1)){
+            primo = false;
+        }
+    }
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+    if(primo == true && num !== 1){
+        alert(`O número ${num} é um número primo.`)
+    }else if( primo == false){
+        alert(`O número ${num} não é primo.`)
+    }
 
 </script>

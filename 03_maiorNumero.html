@@ -6,12 +6,18 @@
     No final, apresente o maior número informado pelo usuário.
     */
 
-    //ENTRADA
 
-    
-    //PROCESSAMENTO
+    let numeros = [];
+    for(let i = 1; i <= 5; i++){
+        numeros.push(Number(prompt(`Insira um número`)))
 
-    
-    //SAÍDA
+    }
+let numMaior = 0;
+for(let num of numeros){
+    if(num > numMaior){
+        numMaior = num
+    }
+}
+alert(`O maior número dentre esses é ${numMaior}`); 
 
 </script>
