@@ -5,12 +5,22 @@
     Considere que a população de uma cidade seja de 50000 habitantes, crescendo 1,5% ao ano. Apresente em tela a população prevista para um prazo de 5 anos e um prazo de 10 anos. Apresente os dados em tela.
     */
 
-    //ENTRADA
-
+ let populacao = 50000;
+    let taxaC = 1.5 / 100;
     
-    //PROCESSAMENTO
-    
-
-    //SAÍDA
+    for (let ano = 1; ano <= 10; ano++) {
+        
+        populacao *= (1 + taxaC);
+        
+        document.write(`Ano: ${ano} População: ${populacao.toFixed(0)}`)
+        
+        if (ano == 5) {
+        
+            document.write(`População prevista em 5 anos: ${populacao.toFixed(0)} habitantes`);
+        } else if (ano == 10) {
+        
+            document.write(`População prevista em 10 anos: ${populacao.toFixed(0)} habitantes`);
+        }
+    }
 
 </script>

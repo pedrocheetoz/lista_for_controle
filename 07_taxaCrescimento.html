@@ -5,12 +5,12 @@
     Supondo que a população de um país seja da ordem de 80000 habitantes, com uma taxa anual de crescimento de 3%, identifique quantos anos serão necessários para que o número de habitandes atinja 200000 habitantes.
     */
 
-    //ENTRADA
+let populacao = 80000;
+let anos = 1;
 
-    
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
-
+ for (populacao; populacao <= 200000; populacao = populacao + (populacao/100)) {
+        anos++
+    }
+ 
+alert(`Demoraram essa quantidade de anos para a cidade chegar a essa quantidade de população\n ${anos}`)
 </script>

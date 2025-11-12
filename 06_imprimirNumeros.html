@@ -8,5 +8,17 @@
     const numIni = Number(prompt("Insira um número inicial"));
     const numFinal = Number(prompt("Insira um número final"))
 
+    let imp = [];
+    let par = [];
+
+    for(; numIni < numFinal; numIni++){
+        if(numIni % 2 == 0){
+            par.push(numIni)
+        }else{
+            imp.push(numIni)
+        }
+    }
+
+    alert(`Esses são todos os impares e pares entre o número inicial e o número final\n ${par}\n ${imp}`)
 
 </script>

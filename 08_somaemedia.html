@@ -4,13 +4,18 @@
     PROBLEMA: SOMA E MÉDIA
     Faça um programa que leia 5 números e informe a soma e média dos números.
     */
-
-    //ENTRADA
-
+ let num = [];
+    for (let i = 1; i <= 5; i++) {
+        numeros.push(Number(prompt("Insira um número.")));
+    }
 
     //PROCESSAMENTO
-
+    let soma = 0;
+    for (let numero of num) {
+        soma = soma + numero;
+    }
+    let med = soma/5;
 
     //SAÍDA
-
+    alert(`A soma é ${soma} e a média é ${med}`)
 </script>
